@@ -3,10 +3,8 @@ function getWeathher() {
     let weathericon = document.querySelector('.weather-icon');
  
 
-  axios
-    .get(
-      `http://api.weatherapi.com/v1/current.json?key=c0f43bfd3256480f9d755520232108&q=${cityname}&aqi=yes`
-    )
+  axios.get(
+      `http://api.weatherapi.com/v1/current.json?key=c0f43bfd3256480f9d755520232108&q=${cityname}&aqi=yes`)
 
     .then(function (response) {
       let weatherdata = response.data;
@@ -36,6 +34,6 @@ function getWeathher() {
       }
     })
     .catch(function (error) {
-      alert(error);
+      alert(You must enter city name or network issue);
     });
 }
