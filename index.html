@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather4U</title>
+    <link rel="shortcut icon" href="Imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="brand">
+            <img src="Imgs/Logo.png" alt="navlogo" />
+          </li>
+          <li class="logoname">Weather4U</li>
+        </ul>
+      </nav>
+
+      <div class="card">
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false" id="cityname">
+            <button onclick="getWeathher(); return false"><img src="Imgs/search.png" alt=""></button>
+        </div>
+        <div class="weather">
+            <img src="Imgs/rain.png" class="weather-icon" >
+            <h1 class="temp" id="temp">°C</h1>
+            <h2 class="city" id="city">City</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="Imgs/humidity.png" >
+                    <div>
+                        <p class="humidity" id="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="Imgs/wind.png" >
+                    <div>
+                        <p class="wind" id="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
