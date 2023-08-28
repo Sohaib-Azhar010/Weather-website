@@ -7,7 +7,7 @@ function getWeather() {
 
   axios
     .get(
-      `http://api.weatherapi.com/v1/current.json?key=c0f43bfd3256480f9d755520232108&q=${cityname}&aqi=yes`
+      `https://api.weatherapi.com/v1/current.json?key=c0f43bfd3256480f9d755520232108&q=${cityname}&aqi=yes`
     )
 
     .then(function (response) {
