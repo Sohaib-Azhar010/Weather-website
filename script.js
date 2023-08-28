@@ -36,7 +36,7 @@ function getWeather() {
       } else {
         weathericon.src = "Imgs/snow.png";
       }
-    };
+    })
     .catch(function (error) {
       alert(error);
     });
