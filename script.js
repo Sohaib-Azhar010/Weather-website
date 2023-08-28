@@ -1,3 +1,5 @@
+const element = document.getElementById("myBtn");
+element.addEventListener("click", getWeather);
 function getWeather() {
     let cityname = document.getElementById("cityname").value;
     let weathericon = document.querySelector('.weather-icon');
